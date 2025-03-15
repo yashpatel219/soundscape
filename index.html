@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundScape - Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2fc0d4d551.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li class="logo">
+                <img src="image/logo.jpg" alt="Music Logo">
+                SoundScape
+            </li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="songs">
+            <h1> SoundScape – Immerse Yourself in the Rhythm of Music 🎵✨ </h1>
+            <div id="songList"></div>
+        </div>
+        <div class="artist-banner">
+            <img src="image/mainpic.jpg" alt="Alan Walker">
+        </div>
+    </div>
+
+    <!-- Music Controls -->
+    <div class="bottom">
+        <input type="range" id="progress" min="0" max="100">
+        <div class="icons">
+            <i class="fa-solid fa-backward" id="prev"></i>
+            <i class="fa-solid fa-play" id="play"></i>
+            <i class="fa-solid fa-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="image/playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">SoundScape - alan walker</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
